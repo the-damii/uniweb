@@ -181,14 +181,14 @@
                         <div class="col-md-6 col-md-offset-3">
                             <div class="section-title text-center">
                                 <h3>Application Form</h3>
-                                <!-- <p>Maecenas sit amet tristique turpis. Quisque porttitor eros quis leo pulvinar, at hendrerit sapien iaculis.</p> -->
+                           
                             </div><!-- end title -->
                             
-                            <form class="big-contact-form" role="search" id="ApplicationForm">
-                                <input type="text" class="form-control" name="FirstName" id="FirstName"  placeholder="Enter your FirstName">
-                                <input type="text" class="form-control" name="LastName" id="LastName" placeholder="Enter your LastName">
-                                <input type="date" class="form-control" name="DateOfBirth" id="DateOfBirth" placeholder="Enter Date of Birth">
-                                <select name="StateOfOrigin" id="StateOfOrigin" class="form-control" form="ApplicationForm">
+                            <form method="POST" action="form.php" class="big-contact-form" role="search" id="ApplicationForm">
+                                <input type="text" class="form-control" name="fname" id="FirstName"  placeholder="Enter your FirstName">
+                                <input type="text" class="form-control" name="lname" id="LastName" placeholder="Enter your LastName">
+                                <input type="date" class="form-control" name="dob" id="DateOfBirth" placeholder="Enter Date of Birth">
+                                <select name="states" id="StateOfOrigin" class="form-control" form="ApplicationForm">
                                     <option value="disabled">Enter State of Origin</option>
                                     <option value="abuja">ABUJA FCT</option>
                                     <option value="abia">ABIA</option>
@@ -233,7 +233,7 @@
                                 <input type="number" class="form-control" name="jamb" id="jamb" placeholder="Enter JAMB Reg. No.">
                                 <input type="number" class="form-control" name="waec" id="waec" placeholder="Enter WAEC Exam No.">
                                 <input type="number" class="form-control" name="score" id="score" placeholder="Enter JAMB score">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" value="submit" class="btn btn-primary">Submit</button>
                             </form>
                         </div><!-- end col -->
                     </div><!-- end row -->
@@ -284,7 +284,7 @@
                                 <form class="form-inline" role="search">
                                     <div class="form-1">
                                         <input type="text" class="form-control" placeholder="Enter email here..">
-                                        <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane-o"></i></button>
+                                        <button  name="submit" type="submit" class="btn btn-primary"><i class="fa fa-paper-plane-o"></i></button>
                                     </div>
                                 </form>
                                 <img src="images/payments.png" alt="" class="img-responsive">
@@ -347,7 +347,7 @@
                     
                 </div>
             </div><!-- end container -->
-        </div> end copy -->
+        </div> 
     </div><!-- end wrapper -->
 
     <!-- jQuery Files -->
